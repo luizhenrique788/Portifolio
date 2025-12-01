@@ -1,0 +1,198 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #111827;
+}
+
+/* Topo */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.logo {
+  font-weight: 700;
+  color: #001f3f; /* azul marinho */
+}
+
+.menu a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #001f3f;
+}
+
+/* Seção principal */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: #ffffff;
+  height: 79vh;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.hero-text h1 span {
+  color: #1d4ed8; /* azul mais vivo para destacar o nome */
+}
+
+.hero-text h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+.hero-text a {
+  padding: 12px 28px;
+  background: #1d4ed8;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+.hero-text a:hover {
+  background: #1e40af;
+}
+
+/* Foto com forma orgânica azul */
+.hero-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-bg {
+  width: 450px;
+  height: 450px;
+  background: #001f3f;
+  border-radius: 60% 40% 55% 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-bg img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+/* Outras seções */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 60px;
+  background: #ffffff;
+  margin-top: 16px;
+  font-size: 20px;
+  
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  color: #001f3f;
+}
+
+.section ul {
+  list-style: disc;
+  margin-left: 20px;
+  
+}
+
+/* Responsivo simples */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+}
+.rodape {
+  background: #0b1b3b;
+  color: #ffffff;
+  padding: 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.rodape p {
+  font-size: 0.9rem;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-left: 16px;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #2450ff;
+}
+
+@media (max-width: 768px) {
+  .rodape {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 24px;
+    text-align: center;
+  }
+}
+.portifolio{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 60px;
+  background: #ffffff;
+  margin-top: 16px;
+  font-size: 20px;
+}
+.portifolio a{
+    padding: 12px 28px;
+  background: #1d4ed8;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
